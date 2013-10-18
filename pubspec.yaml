@@ -1,0 +1,7 @@
+name: routes_example
+version: 0.0.1
+author: Matthew Butler
+description: A sample Polymer application using routes.
+dependencies:
+  polymer: any
+  route: any

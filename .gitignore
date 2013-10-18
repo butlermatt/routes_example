@@ -1,0 +1,6 @@
+*~
+.project
+.buildlog
+pubspec.lock
+packages
+deploy

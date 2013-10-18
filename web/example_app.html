@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+
+<polymer-element name="example-app">
+  <link rel="import" href="one_element.html">
+  <link rel="import" href="two_element.html">
+  <link rel="import" href="help_me.html">
+  <template>
+    <div>
+    <button data-name="one" on-click="updatePage">One</button>
+    <button data-name="two" on-click="updatePage">Two</button>
+    </div>
+    <div id="container"></div>
+  </template>
+  
+  <script type="application/dart" src="example_app.dart"></script>
+</polymer-element>
