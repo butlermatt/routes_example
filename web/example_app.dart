@@ -7,6 +7,9 @@ import 'dart:html';
 class ExampleApp extends PolymerElement {
   @published String page = '';
   
+  // Required now for all Polymer Elements.
+  ExampleApp.created() : super.created();
+  
   // Triggered by the on-click event on the buttons.
   void updatePage(Event e, var detail, Node node) {
     // Get the data-name value from the element
@@ -60,7 +63,7 @@ class ExampleApp extends PolymerElement {
   void _addElement(String elementName) {
     if(elementName == '') throw new ArgumentError('Must provide an element name');
     
-    var content = createElement(elementName);
+    var content = new Element.tag(elementName);
     print('elementName: $elementName Element: ${content.tagName}');
     if(content != null) {
       var container = $['container'];

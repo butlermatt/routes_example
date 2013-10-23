@@ -8,6 +8,10 @@
   import 'package:polymer/polymer.dart';
   
   @CustomTag('one-element')
-  class OneElement extends PolymerElement {}
+  class OneElement extends PolymerElement {
+    // Now required for all Polymer Elements.
+    OneElement.created() : super.created();
+    
+  }
   </script>
 </polymer-element>
